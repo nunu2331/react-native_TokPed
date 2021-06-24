@@ -29,7 +29,7 @@ const Navigation=()=> {
           tabBarLabel: 'Home'
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Cart"
         component={Keranjang}
         options={{
@@ -41,7 +41,7 @@ const Navigation=()=> {
           ),
           tabBarLabel: 'Keranjang'
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Profile"
         component={Profile}

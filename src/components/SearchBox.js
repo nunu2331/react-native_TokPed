@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TextInput,Image } from 'react-native';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
 export class SearchBox extends Component {
   constructor(props) {
     super(props);
@@ -17,8 +17,9 @@ export class SearchBox extends Component {
         <View style={styles.header}>
           <View style={styles.contentContainer}>
             <View style={styles.iconWrapper}>
-              <Image
-                source={require('../assets/search.png')}
+              <Icon
+                name='search'
+                // source={require('../assets/search.png')}
                 style={styles.icon}
                 size={18}
                 color={'gray'}
@@ -95,9 +96,9 @@ export const styles = StyleSheet.create({
   },
   icon: {
     padding: 5,
-    height: 15,
-    width: 15,
+    // height: 15,
+    // width: 15,
     alignSelf: 'center',
-    tintColor: '#B8BEC7'
+    // tintColor: '#B8BEC7'
   },
 });
